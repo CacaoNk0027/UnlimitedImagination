@@ -1,7 +1,9 @@
 package com.gmdd.unlimitedimagination;
 
-import com.gmdd.unlimitedimagination.init.Items;
+import com.gmdd.unlimitedimagination.clases.Items;
+import com.gmdd.unlimitedimagination.clases.Tabs;
 
+import net.minecraftforge.event.CreativeModeTabEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
@@ -16,5 +18,12 @@ public class UnlimitedImagination {
         IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
         // carga de items
         Items.ITEMS.register(bus);
+
+        bus.addListener(this::addCreative);
+    }
+    private void addCreative(CreativeModeTabEvent.BuildContents event) {
+        if(event.getTab() == Tabs.UI_ELECTRICAL) {
+            event.accept(Items.COPPERDUST);   
+        }
     }
 }

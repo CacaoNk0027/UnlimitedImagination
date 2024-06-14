@@ -1,4 +1,4 @@
-package com.gmdd.unlimitedimagination.init;
+package com.gmdd.unlimitedimagination.clases;
 
 import net.minecraft.world.item.Item;
 import net.minecraftforge.registries.DeferredRegister;
@@ -11,4 +11,8 @@ public class Items {
     // Aca se registran todos los items
     
     // public static final RegistryObject<Item> NOMBREITEM = ITEMS.register("nombreitem", () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> COPPERDUST = ITEMS.register("copperdust",
+        () -> new Item(new Item.Properties())
+    );
 }
