@@ -13,6 +13,7 @@ import net.minecraftforge.fml.common.Mod;
 @Mod.EventBusSubscriber(modid = UnlimitedImagination.MODID, bus = Mod.EventBusSubscriber.Bus.MOD)
 public class Tabs {
     public static CreativeModeTab UI_ELECTRICAL;
+    public static CreativeModeTab UI_BLOCKS;
 
     @SubscribeEvent
     public static void registerCreativeModeTabs(CreativeModeTabEvent.Register event) {
@@ -21,5 +22,10 @@ public class Tabs {
             t -> t.icon(() -> new ItemStack(
                 Items.COPPERDUST.get()
             )).title(Component.translatable("creativemodetab.ui_electrical")));
+        UI_BLOCKS = event.registerCreativeModeTab(
+            new ResourceLocation(UnlimitedImagination.MODID, "ui_blocks"),
+            t -> t.icon(() -> new ItemStack(
+                Blocks.RAWZINCBLOCK.get()
+            )).title(Component.translatable("creativemodetab.ui_blocks")));
     }
 }
