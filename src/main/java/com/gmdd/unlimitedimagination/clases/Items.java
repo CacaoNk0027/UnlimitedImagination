@@ -18,4 +18,7 @@ public class Items {
     public static final RegistryObject<Item> RAWZINC = ITEMS.register("rawzinc", 
         () -> new Item(new Item.Properties())
     );
+    public static final RegistryObject<Item> ZINCINGOT = ITEMS.register("zincingot", 
+        () -> new Item(new Item.Properties())
+    );
 }

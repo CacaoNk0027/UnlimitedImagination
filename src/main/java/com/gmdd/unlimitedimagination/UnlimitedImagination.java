@@ -25,6 +25,7 @@ public class UnlimitedImagination {
         if(event.getTab() == Tabs.UI_ELECTRICAL) {
             event.accept(Items.COPPERDUST);
             event.accept(Items.RAWZINC);
+            event.accept(Items.ZINCINGOT);
         }
     }
 }
