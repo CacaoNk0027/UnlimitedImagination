@@ -15,4 +15,7 @@ public class Items {
     public static final RegistryObject<Item> COPPERDUST = ITEMS.register("copperdust",
         () -> new Item(new Item.Properties())
     );
+    public static final RegistryObject<Item> RAWZINC = ITEMS.register("rawzinc", 
+        () -> new Item(new Item.Properties())
+    );
 }

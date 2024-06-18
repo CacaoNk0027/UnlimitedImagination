@@ -23,7 +23,8 @@ public class UnlimitedImagination {
     }
     private void addCreative(CreativeModeTabEvent.BuildContents event) {
         if(event.getTab() == Tabs.UI_ELECTRICAL) {
-            event.accept(Items.COPPERDUST);   
+            event.accept(Items.COPPERDUST);
+            event.accept(Items.RAWZINC);
         }
     }
 }
