@@ -2,7 +2,13 @@
     "item.unlimitedimagination.copperdust": "Copper dust",
     "item.unlimitedimagination.rawzinc": "Raw zinc",
     "item.unlimitedimagination.zincingot": "Zinc ingot",
+    "item.unlimitedimagination.ironstick": "Iron Stick",
+    
     "block.unlimitedimagination.rawzincblock": "Raz zinc block",
+    "block.unlimitedimagination.copperpressureplate": "Copper pressure plate",
+    "block.unlimitedimagination.zincpressureplate": "Zinc pressure plate",
+    "block.unlimitedimagination.zincblock": "Zinc block",
+
     "creativemodetab.ui_electrical": "UI Electrical",
     "creativemodetab.ui_blocks": "UI Blocks"
 }

@@ -2,7 +2,13 @@
     "item.unlimitedimagination.copperdust": "Polvo de cobre",
     "item.unlimitedimagination.rawzinc": "Zinc en bruto",
     "item.unlimitedimagination.zincingot": "Lingote de zinc",
+    "item.unlimitedimagination.ironstick": "Vara de hierro",
+
     "block.unlimitedimagination.rawzincblock": "Bloque de zinc bruto",
+    "block.unlimitedimagination.copperpressureplate": "Placa de presión de cobre",
+    "block.unlimitedimagination.zincpressureplate": "Placa de presión de zinc",
+    "block.unlimitedimagination.zincblock": "Bloque de zinc",
+    
     "creativemodetab.ui_electrical": "UI Electricos",
     "creativemodetab.ui_blocks": "UI Bloques"
 }

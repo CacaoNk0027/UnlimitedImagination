@@ -1,0 +1,10 @@
+{
+    "variants": {
+        "powered=false": {
+            "model": "unlimitedimagination:block/copperpressureplate"
+        },
+        "powered=true": {
+            "model": "unlimitedimagination:block/copperpressureplatedown"
+        }
+    }
+}

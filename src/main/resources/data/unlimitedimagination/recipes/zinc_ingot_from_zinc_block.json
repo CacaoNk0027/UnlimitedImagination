@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#"
+  ],
+  "key": {
+    "#": {
+      "item": "unlimitedimagination:zincblock"
+    }
+  },
+  "result": {
+    "item": "unlimitedimagination:zincingot",
+    "count": 9
+  }
+}

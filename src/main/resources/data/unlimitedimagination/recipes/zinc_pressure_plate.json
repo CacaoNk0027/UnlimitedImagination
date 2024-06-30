@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "category": "redstone",
+    "pattern": [
+      "##"
+    ],
+    "key": {
+      "#": {
+        "item": "unlimitedimagination:zincingot"
+      }
+    },
+    "result": {
+      "id": "unlimitedimagination:zincpressureplate",
+      "count": 1
+    }
+  }
+  

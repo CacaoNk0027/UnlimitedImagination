@@ -2,10 +2,9 @@ package com.gmdd.unlimitedimagination;
 
 import com.gmdd.unlimitedimagination.clases.Blocks;
 import com.gmdd.unlimitedimagination.clases.Items;
-import com.gmdd.unlimitedimagination.clases.Tabs;
+import com.gmdd.unlimitedimagination.extra.AddCreativeTabs;
+import com.gmdd.unlimitedimagination.extra.ClientSetup;
 
-import net.minecraft.world.item.CreativeModeTabs;
-import net.minecraftforge.event.CreativeModeTabEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
@@ -22,26 +21,12 @@ public class UnlimitedImagination {
         Items.ITEMS.register(bus);
         Blocks.BLOCKS.register(bus);
 
-        bus.addListener(this::addCreative);
-    }
-    private void addCreative(CreativeModeTabEvent.BuildContents event) {
-        // Tabs del juego
-        if(event.getTab() == CreativeModeTabs.NATURAL_BLOCKS) {
-            event.accept(Blocks.RAWZINCBLOCK);
-        }
-        if(event.getTab() == CreativeModeTabs.INVENTORY) {
-            event.accept(Items.COPPERDUST);
-            event.accept(Items.RAWZINC);
-            event.accept(Items.ZINCINGOT);
-        }
-        // Tabs personalizadas
-        if(event.getTab() == Tabs.UI_ELECTRICAL) {
-            event.accept(Items.COPPERDUST);
-            event.accept(Items.RAWZINC);
-            event.accept(Items.ZINCINGOT);
-        }
-        if(event.getTab() == Tabs.UI_BLOCKS) {
-            event.accept(Blocks.RAWZINCBLOCK);
-        }
+        bus.addListener(new AddCreativeTabs()::addCreative);
+        bus.addListener(new ClientSetup()::setupClient);
     }
 }
+
+/*
+ * pagina para los recipes
+ * https://misode.github.io/recipe/
+ */

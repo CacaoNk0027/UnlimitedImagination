@@ -21,4 +21,7 @@ public class Items {
     public static final RegistryObject<Item> ZINCINGOT = ITEMS.register("zincingot", 
         () -> new Item(new Item.Properties())
     );
+    public static final RegistryObject<Item> IRONSTICK = ITEMS.register("ironstick",
+        () -> new Item(new Item.Properties())
+    );
 }

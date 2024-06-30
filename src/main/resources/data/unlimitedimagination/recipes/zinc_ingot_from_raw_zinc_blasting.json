@@ -1,0 +1,10 @@
+{
+    "type": "minecraft:blasting",
+    "group": "zincingot",
+    "ingredient": {
+        "item": "unlimitedimagination:rawzinc"
+    },
+    "result": "unlimitedimagination:zincingot",
+    "experience": 0.7,
+    "cookingtime": 100
+}
