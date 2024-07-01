@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "unlimitedimagination:zincblock"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_zincingot": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "unlimitedimagination:zincingot"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_zincingot",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "unlimitedimagination:zincblock"
+    ]
+  }
+}

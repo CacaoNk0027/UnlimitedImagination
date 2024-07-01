@@ -1,9 +1,10 @@
 package com.gmdd.unlimitedimagination;
 
 import com.gmdd.unlimitedimagination.clases.Blocks;
+import com.gmdd.unlimitedimagination.clases.BlocksSnTxs;
 import com.gmdd.unlimitedimagination.clases.Items;
-import com.gmdd.unlimitedimagination.extra.AddCreativeTabs;
-import com.gmdd.unlimitedimagination.extra.ClientSetup;
+import com.gmdd.unlimitedimagination.conf.AddCreativeTabs;
+import com.gmdd.unlimitedimagination.conf.ClientSetup;
 
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
@@ -20,7 +21,8 @@ public class UnlimitedImagination {
         // carga de items
         Items.ITEMS.register(bus);
         Blocks.BLOCKS.register(bus);
-
+        BlocksSnTxs.BLOCKS.register(bus);
+        
         bus.addListener(new AddCreativeTabs()::addCreative);
         bus.addListener(new ClientSetup()::setupClient);
     }

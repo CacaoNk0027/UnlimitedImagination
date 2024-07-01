@@ -8,6 +8,8 @@
     "block.unlimitedimagination.copperpressureplate": "Copper pressure plate",
     "block.unlimitedimagination.zincpressureplate": "Zinc pressure plate",
     "block.unlimitedimagination.zincblock": "Zinc block",
+    "block.unlimitedimagination.zincore": "Zinc ore",
+    "block.unlimitedimagination.deepzincore": "Deep zinc ore",
 
     "creativemodetab.ui_electrical": "UI Electrical",
     "creativemodetab.ui_blocks": "UI Blocks"
